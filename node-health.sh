@@ -9,11 +9,12 @@
 # Version: v1
 #####################
 
-echo "used for printing the disc space"
+set -x # debug mode
+# echo "used for printing the disc space"
 df -h
 
-echo "for printing the memory"
+# echo "for printing the memory"
 free -g
 
-echo "for printing the resources"
+# echo "for printing the resources"
 nproc
