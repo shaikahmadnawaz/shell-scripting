@@ -10,6 +10,9 @@
 #####################
 
 set -x # debug mode
+set -e # exit the script when there is an error
+set -o # pipefail
+
 # echo "used for printing the disc space"
 df -h
 
@@ -18,3 +21,5 @@ free -g
 
 # echo "for printing the resources"
 nproc
+
+ps -ef | grep nawaz | awk -F" " '{print $1}'
